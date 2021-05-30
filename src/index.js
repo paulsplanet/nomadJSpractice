@@ -42,9 +42,16 @@ const greetPaul = sayHello("paul", 36);
 console.log(greetPaul);
 */
 
+/*
 const calculator = {
-  plus: funcation(a, b){return a + b;}
+  plus: function(a, b) {
+    return a + b;
+  }
 };
 
 const plus = calculator.plus(5, 5);
 console.log(plus);
+*/
+
+const title = document.getElementById("title");
+title.innerHTML = "Hi! from JS";
