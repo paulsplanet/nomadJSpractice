@@ -71,18 +71,52 @@ window.addEventListener("resize", handleResize);
 */
 
 /* 
-const title = document.getElementById("title");
-
-function handleClick() {
-  title.style.color = "blue";
-}
-
-title.addEventListener("click", handleClick);
-*/
-
 const age = prompt("how old are you");
 if (age > 18) {
   console.log("you can drink");
 } else {
   console.log("you can't");
 }
+*/
+
+const title = document.getElementById("title");
+const CLICKED_CLASS = "clicked";
+/* 
+const BASE_COLOR = "green";
+const OTHER_COLOR = "blue";
+
+function handleClick() {
+  const currnetColor = title.style.color;
+  if (currnetColor === BASE_COLOR) {
+    title.style.color = OTHER_COLOR;
+  } else {
+    title.style.color = BASE_COLOR;
+  }
+}
+*/
+
+function handleClick() {
+  title.classList.toggle(CLICKED_CLASS);
+  /* this whole function is exactly same as toggle method
+  const hasClass = title.classList.contains(CLICKED_CLASS);
+  if (!hasClass) {
+    title.classList.add(CLICKED_CLASS);
+  } else {
+    title.classList.remove(CLICKED_CLASS);
+  }
+  */
+}
+/*  this,className, will replace whole class name I assigned
+const currentClass = title.className;
+if (currentClass !== CLICKED_CLASS) {
+    title.className = CLICKED_CLASS;
+  } else {
+    title.className = "";
+  }
+*/
+
+function init() {
+  title.addEventListener("click", handleClick);
+}
+
+init();
