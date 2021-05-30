@@ -12,7 +12,7 @@ const what = 55.53; */
 /* Array 
 const daysOfWeek = ["Mon", "Tue", "Wed", "The", "Fri", "Sat", "Sun"] */
 
-/* Object */
+/* Object 
 
 const paulInfo = {
   name: "paul",
@@ -32,4 +32,19 @@ console.log(paulInfo);
 
 paulInfo.gender = "Female";
 
-console.log(paulInfo);
+console.log(paulInfo);*/
+
+/* function sayHello(name, age) {
+   return `"hello" ${name} you are ${age} years old`;
+}
+
+const greetPaul = sayHello("paul", 36);
+console.log(greetPaul);
+*/
+
+const calculator = {
+  plus: funcation(a, b){return a + b;}
+};
+
+const plus = calculator.plus(5, 5);
+console.log(plus);
