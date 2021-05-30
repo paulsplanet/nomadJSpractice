@@ -53,5 +53,36 @@ const plus = calculator.plus(5, 5);
 console.log(plus);
 */
 
+/*
 const title = document.getElementById("title");
+// const title = document.querySelector("#title")
 title.innerHTML = "Hi! from JS";
+title.style.color = "blue";
+document.title = "this is practice";
+*/
+
+/* 
+function handleResize(){
+  console.log("I have been resized")
+};
+
+window.addEventListener("resize", handleResize);
+//window.addEventListener("resize", handleResize()); -> handleResize() means call the function now, imediately, without action
+*/
+
+/* 
+const title = document.getElementById("title");
+
+function handleClick() {
+  title.style.color = "blue";
+}
+
+title.addEventListener("click", handleClick);
+*/
+
+const age = prompt("how old are you");
+if (age > 18) {
+  console.log("you can drink");
+} else {
+  console.log("you can't");
+}
